@@ -1,4 +1,4 @@
-/app/config/parameters.yml
+/config/packages/parameters.yml
 /build/
 /phpunit.xml
 /var/*
@@ -13,9 +13,13 @@
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
 /vendor/
-/web/bundles/
+/public/bundles/
 
-/app/config/phpcr.yml
+/config/packages/phpcr.yml
 /jackrabbit/
 /jackrabbit-standalone-*.jar
 /vagrant/.vagrant
+
+###> symfony/web-server-bundle ###
+.web-server-pid
+###< symfony/web-server-bundle ###
