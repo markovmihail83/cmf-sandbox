@@ -37,7 +37,7 @@ static:
                             body: To log into the <a href="admin/dashboard">backend admin</a>, use the username 'admin' and the password 'admin'.
                     child3:
                         class: Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\ActionBlock
-                        actionName: AppBundle:Default:block
+                        actionName: App:Default:block
             rssBlock:
                 class: Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\RssBlock
                 properties:
