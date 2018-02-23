@@ -54,7 +54,7 @@
         "doctrine/data-fixtures": "^1.0",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/doctrine-cache-bundle": "^1.2",
-        "doctrine/phpcr-odm": "^1.4",
+        "doctrine/phpcr-odm": "^2.0",
         "egeloen/ckeditor-bundle": "dev-allow_symfony_4",
         "egeloen/json-builder": "dev-allow_symfony_4 as 3.0",
         "friendsofsymfony/rest-bundle": "^2.3",
