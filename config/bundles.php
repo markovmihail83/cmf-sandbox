@@ -37,4 +37,6 @@ return [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true, 'test' => true],
     Liip\FunctionalTestBundle\LiipFunctionalTestBundle::class => ['test' => true],
+    Sonata\DatagridBundle\SonataDatagridBundle::class => ['all' => true],
+    FOS\JsRoutingBundle\FOSJsRoutingBundle::class => ['all' => true],
 ];

@@ -1,6 +1,27 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+# This file is auto-generated during the composer install
 parameters:
+    locale: en
+    locales:
+        - en
+        - fr
+        - de
+    secret: ThisTokenIsNotSoSecretChangeIt
+    coffee.extension: \.coffee-disabled$
+    coffee.bin: ''
+    coffee.node: ''
+    database_driver: pdo_sqlite
+    database_host: localhost
+    database_port: null
+    database_name: cmf_sandbox
+    database_user: root
+    database_password: null
+    database_path: '%kernel.project_dir%/var/app.sqlite'
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
 
 services:
     # default configuration for services in *this* file
@@ -25,19 +46,3 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-    App\Controller\ContentController:
-        alias: app.content_controller
-        parent: cmf_content.controller
-    App\EventListener\SandboxExceptionListener:
-#        calls:
-#            - [setContainer, ['@service_container']
-        tags:
-            - { name: kernel.event_subscriber }
-    App\Twig\MenuExtension:
-        arguments: ['@knp_menu.helper', '@knp_menu.matcher']
-        tags:
-            - { name: twig.extension }
-    App\Security\ResourceVoter:
-        tags:
-            - { name: security.voter }
-

@@ -1,0 +1,39 @@
+cmf_core:
+    multilang:
+        locales: '%locales%'
+    persistence:
+        phpcr:
+            enabled: true
+
+cmf_menu:
+    voters:
+        content_identity: ~
+
+cmf_resource:
+    description:
+        enhancers: [doctrine_phpcr_position]
+    repositories:
+        default:
+            type: doctrine/phpcr-odm
+
+cmf_tree_browser:
+    icons:
+        App\Document\DemoSeoContent: 'fa fa-file-text-o'
+        Sonata\BlockBundle\Model\BlockInterface: 'fa fa-cube'
+        Symfony\Cmf\Bundle\SeoBundle\Model\SeoMetadata: 'fa fa-search'
+        Symfony\Cmf\Bundle\MenuBundle\Model\MenuNode: 'fa fa-share-square-o'
+        Symfony\Cmf\Bundle\RoutingBundle\Model\Route: 'fa fa-link'
+        Symfony\Cmf\Bundle\RoutingBundle\Model\RedirectRoute: 'fa fa-reply'
+
+cmf_sonata_phpcr_admin_integration:
+    bundles:
+        seo: ~
+        menu: ~
+        core: ~
+        content:
+           ivory_ckeditor:
+              config_name: cmf_sonata_phpcr_admin_integration
+        block:
+            basepath: /cms/content
+            menu_basepath: /cms/content
+        routing: ~
