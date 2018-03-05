@@ -964,12 +964,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrinePHPCRBundle.git",
-                "reference": "bb380a5393bafadfcac3cae8e0f0cff91209abb7"
+                "reference": "b265cdca6f04206ac6a7ef771f9cb1bf8749ea30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/bb380a5393bafadfcac3cae8e0f0cff91209abb7",
-                "reference": "bb380a5393bafadfcac3cae8e0f0cff91209abb7",
+                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/b265cdca6f04206ac6a7ef771f9cb1bf8749ea30",
+                "reference": "b265cdca6f04206ac6a7ef771f9cb1bf8749ea30",
                 "shasum": ""
             },
             "require": {
@@ -1044,7 +1044,7 @@
                 "persistence",
                 "phpcr"
             ],
-            "time": "2018-02-20T07:31:40+00:00"
+            "time": "2018-02-23T10:45:30+00:00"
         },
         {
             "name": "doctrine/phpcr-odm",
@@ -3646,12 +3646,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/content-bundle.git",
-                "reference": "f0ba6c71c78ea3e35e7adb0d7d7bd56ffb59b7d5"
+                "reference": "7c1e21da46e9acc2b4b2221d26cc007e3b535421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/content-bundle/zipball/f0ba6c71c78ea3e35e7adb0d7d7bd56ffb59b7d5",
-                "reference": "f0ba6c71c78ea3e35e7adb0d7d7bd56ffb59b7d5",
+                "url": "https://api.github.com/repos/symfony-cmf/content-bundle/zipball/7c1e21da46e9acc2b4b2221d26cc007e3b535421",
+                "reference": "7c1e21da46e9acc2b4b2221d26cc007e3b535421",
                 "shasum": ""
             },
             "require": {
@@ -3698,7 +3698,7 @@
             "keywords": [
                 "Symfony CMF"
             ],
-            "time": "2018-01-24T21:16:28+00:00"
+            "time": "2018-03-01T08:22:16+00:00"
         },
         {
             "name": "symfony-cmf/core-bundle",

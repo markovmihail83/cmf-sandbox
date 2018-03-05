@@ -1,0 +1,21 @@
+services:
+    App\Controller\ContentController: '@app.content_controller'
+
+    app.content_controller:
+        parent: cmf_content.controller
+
+    App\EventListener\SandboxExceptionListener:
+#        calls:
+#            - [setContainer, ['@service_container']
+        tags:
+            - { name: kernel.event_subscriber }
+    App\Twig\MenuExtension:
+        arguments:
+            $helper: '@knp_menu.helper'
+            $matcher: '@knp_menu.matcher'
+        tags:
+            - { name: twig.extension }
+
+    App\Security\ResourceVoter:
+        tags:
+            - { name: security.voter }
