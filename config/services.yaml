@@ -3,6 +3,7 @@
 # This file is auto-generated during the composer install
 imports:
     - { resource: more_services.yaml }
+
 parameters:
     locale: en
     locales:
@@ -48,3 +49,9 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\Twig\MenuExtension:
+        arguments:
+            $helper: '@knp_menu.helper'
+            $matcher: '@knp_menu.matcher'
+        tags:
+            - { name: twig.extension }

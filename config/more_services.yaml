@@ -9,12 +9,6 @@ services:
 #            - [setContainer, ['@service_container']
         tags:
             - { name: kernel.event_subscriber }
-    App\Twig\MenuExtension:
-        arguments:
-            $helper: '@knp_menu.helper'
-            $matcher: '@knp_menu.matcher'
-        tags:
-            - { name: twig.extension }
 
     App\Security\ResourceVoter:
         tags:
