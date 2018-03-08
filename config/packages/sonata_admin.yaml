@@ -84,7 +84,6 @@ sonata_doctrine_phpcr_admin:
 #    locales: '%locales%'
 #    default_locale: '%locale%'
 #    phpcr: true
-#    phpcr: true
 
 sonata_seo:
     page:

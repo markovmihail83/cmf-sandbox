@@ -64,6 +64,8 @@ class Kernel extends BaseKernel
     {
         $services = [
             'sonata.cache.phpcr_odm.event_subscriber.default',
+            // Todo: remove when https://github.com/lunetics/LocaleBundle/pull/203 is released
+            'lunetics_locale.switcher_controller',
         ];
         $container->addCompilerPass(new TestContainerPass($services), PassConfig::TYPE_BEFORE_OPTIMIZATION, 100);
         $container->addCompilerPass(new DocumentClassPass(), PassConfig::TYPE_BEFORE_OPTIMIZATION, 100);

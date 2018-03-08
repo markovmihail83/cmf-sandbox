@@ -37,3 +37,31 @@ cmf_sonata_phpcr_admin_integration:
             basepath: /cms/content
             menu_basepath: /cms/content
         routing: ~
+cmf_routing:
+    chain:
+        routers_by_id:
+            router.default: 20
+            cmf_routing.dynamic_router: 100
+    dynamic:
+        route_collection_limit: 10
+        controllers_by_type:
+            demo_type: app.content_controller:typeAction
+        controllers_by_class:
+            App\Document\DemoClassContent: app.content_controller:classAction
+            Symfony\Cmf\Bundle\RoutingBundle\Doctrine\Phpcr\RedirectRoute:  cmf_routing.redirect_controller:redirectAction
+
+        templates_by_class:
+            Symfony\Cmf\Bundle\ContentBundle\Doctrine\Phpcr\StaticContent: static_content/index.html.twig
+
+cmf_seo:
+    title: 'CMF Sandbox - %%content_title%%'
+    description: 'The Content Management Framework. %%content_description%%'
+    alternate_locale: ~
+
+cmf_routing_auto:
+    persistence:
+        phpcr:
+            enabled: true
+    mapping:
+        resources:
+            - '%kernel.project_dir%/src/Resources/config/cmf_routing_auto.yml'
