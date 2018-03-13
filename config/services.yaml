@@ -3,6 +3,7 @@
 # This file is auto-generated during the composer install
 imports:
     - { resource: more_services.yaml }
+    - { resource: phpcr.yaml }
 
 parameters:
     locale: en

@@ -1,6 +1,4 @@
-imports:
-    - { resource: parameters.yaml }
-    - { resource: phpcr.yaml }
+
 
 # Twig Configuration
 
@@ -8,19 +6,10 @@ imports:
 
 # cmf configuration
 
-knp_menu:
-    twig: true
 
-sensio_framework_extra:
-    router:  { annotations: true }
-    request: { converters: true }
 
-lunetics_locale:
-    strict_mode: true
-    guessing_order:
-        - router
-        - cookie
-        - browser
-    allowed_locales: '%locales%'
+
+
+
 
 

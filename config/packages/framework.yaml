@@ -1,4 +1,3 @@
-
 framework:
     #esi:             ~
     translator:      { fallback: en }
@@ -9,3 +8,7 @@ framework:
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
     session:
         name: symfony-cmf
+
+sensio_framework_extra:
+    router:  { annotations: true }
+    request: { converters: true }
