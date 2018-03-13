@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "39bdab351e508af446f1fee166f5a38f",
+    "content-hash": "5565fb99b3bf6d2c954023f975e7d93a",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -1854,6 +1854,71 @@
                 "transport implementation"
             ],
             "time": "2018-01-29T14:41:19+00:00"
+        },
+        {
+            "name": "jackalope/jackalope-jackrabbit",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jackalope/jackalope-jackrabbit.git",
+                "reference": "85ffb6a46c94ffe8f24b3678d453828d20661f78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jackalope/jackalope-jackrabbit/zipball/85ffb6a46c94ffe8f24b3678d453828d20661f78",
+                "reference": "85ffb6a46c94ffe8f24b3678d453828d20661f78",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-xml": "*",
+                "jackalope/jackalope": "^1.3.4",
+                "php": "^5.6|^7.0",
+                "phpcr/phpcr": "~2.1.2",
+                "phpcr/phpcr-utils": "^1.3.0"
+            },
+            "provide": {
+                "jackalope/jackalope-transport": "1.3.0"
+            },
+            "require-dev": {
+                "phpcr/phpcr-api-tests": "2.1.19",
+                "psr/log": "~1.0",
+                "symfony/console": "~2.0"
+            },
+            "bin": [
+                "bin/jackalope",
+                "bin/jackrabbit.sh"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Jackalope\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jackalope Community",
+                    "homepage": "https://github.com/jackalope/jackalope-jackrabbit/contributors"
+                }
+            ],
+            "description": "Jackalope Transport library for Jackrabbit",
+            "homepage": "http://jackalope.github.com",
+            "keywords": [
+                "jackrabbit",
+                "phpcr",
+                "transport implementation"
+            ],
+            "time": "2017-11-22T14:45:43+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
