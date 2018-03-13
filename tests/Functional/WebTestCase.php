@@ -11,6 +11,7 @@
 
 namespace App\Tests\Functional;
 
+use App\Kernel;
 use Liip\FunctionalTestBundle\Test\WebTestCase as BaseWebTestCase;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -40,7 +41,7 @@ abstract class WebTestCase extends BaseWebTestCase
             'PHP_AUTH_PW' => 'admin',
         ]);
 
-        return $this->createClient($options, $server);
+        return self::createClient($options, $server);
     }
 
     /**
@@ -70,5 +71,10 @@ abstract class WebTestCase extends BaseWebTestCase
             $response->getStatusCode(),
             $exception ? 'Exception: "'.trim($exception).'" on url: '.$url : null
         );
+    }
+
+    protected static function getKernelClass()
+    {
+        return Kernel::class;
     }
 }
