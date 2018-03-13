@@ -44,9 +44,9 @@
         ]
     },
     "repositories": [
-        {"type": "vcs", "url": "https://github.com/ElectricMaxxx/IvoryCKEditorBundle.git"},
-        {"type": "vcs", "url": "https://github.com/ElectricMaxxx/SonataDoctrinePhpcrAdminBundle.git"},
-        {"type": "vcs", "url": "https://github.com/ElectricMaxxx/ivory-json-builder.git"}
+        {"type": "vcs", "url": "https://github.com/ElectricMaxxx/IvoryCKEditorBundle"},
+        {"type": "vcs", "url": "https://github.com/ElectricMaxxx/SonataDoctrinePhpcrAdminBundle"},
+        {"type": "vcs", "url": "https://github.com/ElectricMaxxx/ivory-json-builder"}
     ],
     "require": {
         "php": "^7.1.3",
