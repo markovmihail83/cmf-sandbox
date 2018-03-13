@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tests\Functional;
+namespace App\Tests\Functional;
 
 use Liip\FunctionalTestBundle\Test\WebTestCase as BaseWebTestCase;
 use Symfony\Component\HttpFoundation\Response;
