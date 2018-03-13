@@ -25,7 +25,7 @@ class DefaultController extends Controller
      *
      * @return Response
      */
-    public function blockAction($block)
+    public function block($block)
     {
         return $this->render('block/demo_action_block.html.twig', [
             'block' => $block,
@@ -35,7 +35,7 @@ class DefaultController extends Controller
     /**
      * @Route("/hello", name="symfony_route")
      */
-    public function helloAction()
+    public function hello()
     {
         return $this->render('static_content/hello.html.twig');
     }

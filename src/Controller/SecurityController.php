@@ -20,7 +20,7 @@ class SecurityController extends Controller
     /**
      * @Route("/login", name="login")
      */
-    public function loginAction(Request $request)
+    public function login(Request $request)
     {
         $authenticationUtils = $this->get('security.authentication_utils');
         $error = $authenticationUtils->getLastAuthenticationError();
@@ -35,7 +35,7 @@ class SecurityController extends Controller
     /**
      * @Route("/logout", name="logout")
      */
-    public function logoutAction()
+    public function logout()
     {
     }
 }

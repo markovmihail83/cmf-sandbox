@@ -1,5 +1,7 @@
 
 fos_rest:
+    exception:
+        enabled: true
     view:
         force_redirects:
             html: true
