@@ -12,4 +12,4 @@
 ###< symfony/phpunit-bridge ###
 
 vagrant/.vagrant
-/config/packages/phpcr.yaml
+/config/phpcr.yaml
